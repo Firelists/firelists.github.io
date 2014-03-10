@@ -1,0 +1,950 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tran",
+				"transitionToRoute"
+			],
+			[
+				"auth",
+				"authorized"
+			],
+			[
+				"newList",
+				"newListRef"
+			],
+			[
+				"redi",
+				"redirect"
+			],
+			[
+				"redirec",
+				"redirectTo"
+			],
+			[
+				"red",
+				"redirectBackTo"
+			],
+			[
+				"reire",
+				"redirectTo"
+			],
+			[
+				"redire",
+				"redirectBackTo"
+			],
+			[
+				"re",
+				"redirectBackTo"
+			],
+			[
+				"STA",
+				"STAGE_SIZE_X"
+			],
+			[
+				"ST",
+				"STAGE_SIZE_X"
+			],
+			[
+				"render",
+				"renderTexture"
+			],
+			[
+				"http",
+				"httpRequestTracker"
+			],
+			[
+				"login",
+				"loginService"
+			],
+			[
+				"con",
+				"confirmPassword"
+			],
+			[
+				"lo",
+				"login"
+			],
+			[
+				"logi",
+				"loginService"
+			],
+			[
+				"_red",
+				"_redirect"
+			],
+			[
+				"_re",
+				"_redirect"
+			],
+			[
+				"password",
+				"passwordConfirmation"
+			],
+			[
+				"firebaes",
+				"firebaseSimpleLogin"
+			],
+			[
+				"fire",
+				"firebaseSimpleLogin"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"and",
+				"andreas-mcdermott-site"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"te",
+				"text-font"
+			],
+			[
+				"link-color-",
+				"link-color-selected"
+			],
+			[
+				"li",
+				"link-color-selected"
+			],
+			[
+				"link-",
+				"link-color-hover"
+			],
+			[
+				"borer-bott",
+				"border-bottom-style"
+			],
+			[
+				"link",
+				"link-color-hover"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"base",
+				"base-color"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-style"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4511,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 2905,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 6757,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/CopyToDropbox.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Add Repository"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"instal package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Andreas/Repositories/firelists/README.md",
+		"/C/Users/Andreas/Repositories/m1-app/views/session/signup.html",
+		"/C/Users/Andreas/Repositories/m1-app/app/user/session.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/routes.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/user/account.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/dashboard/dashboard.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/fb.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/main.js",
+		"/C/Users/Andreas/Repositories/m1-app/views/session/signin.html",
+		"/C/Users/Andreas/Repositories/m1-app/app/constants.js",
+		"/C/Users/Andreas/Repositories/m1-app/index.html",
+		"/C/Users/Andreas/Repositories/m1-app/views/dashboard/index.html",
+		"/C/Users/Andreas/Repositories/m1-app/app/dashboard/index.html",
+		"/C/Users/Andreas/Repositories/m1-app/css/normalize.css",
+		"/C/Users/Andreas/Repositories/m1-app/views/account/index.html",
+		"/C/Users/Andreas/Repositories/m1-app/app/config.js",
+		"/C/Users/Andreas/Repositories/m1-app/screen.css",
+		"/C/Users/Andreas/Repositories/m1-app/m1.sublime-project",
+		"/C/Users/Andreas/Repositories/m1-app/app/m1.sublime-project",
+		"/C/Users/Andreas/Repositories/GIC22/views/signin.html",
+		"/C/Users/Andreas/Repositories/GIC22/index.html",
+		"/C/Users/Andreas/Repositories/GIC22/js/page.js",
+		"/C/Users/Andreas/Repositories/GIC22/js/game.js",
+		"/C/Users/Andreas/Repositories/GIC22/js/firebase.js",
+		"/C/Users/Andreas/Repositories/GIC22/views/play.html",
+		"/C/Users/Andreas/Repositories/GIC22/js/main.js",
+		"/C/Users/Andreas/Repositories/GIC22/game.js",
+		"/C/Users/Andreas/Repositories/GIC22/css/game.css",
+		"/C/Users/Andreas/Repositories/GIC22/src/game.js",
+		"/C/Users/Andreas/Repositories/GIC22/src/main.js",
+		"/C/Users/Andreas/Repositories/GIC22/src/loader.js",
+		"/C/Users/Andreas/AppData/Roaming/Sublime Text 3/Packages/User/gic22.sublime-build",
+		"/C/Users/Andreas/AppData/Roaming/Sublime Text 3/Packages/User/CopyToDropbox.sublime-build",
+		"/C/Users/Andreas/Repositories/m1-app/views/shared/header.html",
+		"/C/Users/Andreas/Repositories/m1-app/app/services/httpRequestTracker.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/services/services.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/services/login.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/app.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/controllers/header.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/directives/m1ShowAuth.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/controllers/controllers.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/controllers/login.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/directives/directives.js",
+		"/C/Users/Andreas/Repositories/m1-app/views/users/signin.html",
+		"/C/Users/Andreas/Repositories/m1-app/css/main.css",
+		"/C/Users/Andreas/Repositories/m1-app/app/directives/m1CloakAuth.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/services/waitForAuth.js",
+		"/C/Users/Andreas/Repositories/m1-app/views/account/overview.html",
+		"/C/Users/Andreas/Repositories/m1-app/app/services/routeSecurity.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/services/firebase.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/app/app.js",
+		"/C/Users/Andreas/Repositories/m1-app/app/index.html",
+		"/C/Users/Andreas/Repositories/amcd/_layouts/default.html",
+		"/C/Users/Andreas/Repositories/amcd/games/red-alert/index.html",
+		"/C/Users/Andreas/Repositories/amcd/games/cyan/index.html",
+		"/C/Users/Andreas/Repositories/amcd/games/tiny-world/index.html",
+		"/C/Users/Andreas/Repositories/amcd/_layouts/post.html",
+		"/C/Users/Andreas/Repositories/amcd/_layouts/game.html",
+		"/C/Users/Andreas/Repositories/amcd/css/site.css",
+		"/C/Users/Andreas/Repositories/amcd/index.html",
+		"/C/Users/Andreas/Repositories/amcd/_posts/2013-05-22-switching-to-github-pages.md",
+		"/C/Users/Andreas/Repositories/amcd/games/index.html",
+		"/C/Users/Andreas/Repositories/amcd/games/tinyworld.html",
+		"/C/Users/Andreas/Repositories/amcd/games/redalert.html",
+		"/C/Users/Andreas/Repositories/amcd/games/cyan.html",
+		"/C/Users/Andreas/Repositories/amcd/_posts/2013-08-23-ludum-dare-27.md",
+		"/C/Users/Andreas/Repositories/amcd/_posts/2013-12-17-New-design-and-LD-28.md",
+		"/C/Users/Andreas/Repositories/amcd/_includes/paginator.ext",
+		"/C/Users/Andreas/Repositories/amcd/css/pygments.css",
+		"/C/Users/Andreas/Repositories/amcd/_posts/2013-05-24-Adding-disqus-comments-to-a-jekyll-blog.md",
+		"/C/Users/Andreas/Repositories/grove-media-old/themes/theme-base/css/main.css",
+		"/C/Users/Andreas/Repositories/amcd/_includes/social.ext",
+		"/C/Users/Andreas/Repositories/amcd/categories/index.html",
+		"/C/Users/Andreas/Repositories/amcd/blog/index.html",
+		"/C/Users/Andreas/Repositories/amcd/about/index.html",
+		"/C/Users/Andreas/Repositories/amcd/_config.yml",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/posts/index.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/config/routes.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/layouts/application.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/users/_form.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/controllers/games_controller.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/controllers/users_controller.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/welcome/index.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/games/show.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/games/new.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/users/new.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/users/edit.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/users/create.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/config/environments/production.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/config/environments/development.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/controllers/sessions_controller.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/controllers/welcome_controller.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/Gemfile",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/config/deploy/production.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/config/deploy.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/config/unicorn.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/lib/PygmentizeHtml.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/.gitignore",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/seeds.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/assets/stylesheets/base.css.scss",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/posts/_form.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/controllers/posts_controller.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/models/post.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/posts/new.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/games/_form.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/migrate/20131113221837_add_category_to_post.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/migrate/20131113221947_add_tags_to_game.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/migrate/20131113221837_add_tag_to_post.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/models/game.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/games/index.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/posts/show.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/assets/stylesheets/reset.css.scss",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/helpers/application_helper.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/schema.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/shared/_disqus.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/shared/_disqus_count.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/posts/edit.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/config/application.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/lib/pygmentize_html.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/config/initializers/friendly_id.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/games/edit.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/migrate/20131113110833_add_html_to_game.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/migrate/20131112231025_create_posts.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/uploaders/image_uploader.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/sessions/new.html.erb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/migrate/20131108111850_create_games.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/controllers/application_controller.rb",
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/helpers/sessions_helper.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"get('/'",
+			"/",
+			"CBDBFC",
+			"}\n",
+			"; "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4511,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3981,
+								3981
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1079.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2404,
+								2404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 21.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6342,
+								6342
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2533.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 88.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "firelists.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pind",
+				"app\\views\\posts\\index.html.erb"
+			],
+			[
+				"pform",
+				"app\\views\\posts\\_form.html.erb"
+			],
+			[
+				"pcon",
+				"app\\controllers\\posts_controller.rb"
+			],
+			[
+				"pfo",
+				"app\\views\\posts\\_form.html.erb"
+			],
+			[
+				"pnew",
+				"app\\views\\posts\\new.html.erb"
+			],
+			[
+				"post",
+				"app\\models\\post.rb"
+			],
+			[
+				"pin",
+				"app\\views\\posts\\index.html.erb"
+			],
+			[
+				"pofor",
+				"app\\views\\posts\\_form.html.erb"
+			],
+			[
+				"postc",
+				"app\\controllers\\posts_controller.rb"
+			],
+			[
+				"gcon",
+				"app\\controllers\\games_controller.rb"
+			],
+			[
+				"gfor",
+				"app\\views\\games\\_form.html.erb"
+			],
+			[
+				"poin",
+				"app\\views\\posts\\index.html.erb"
+			],
+			[
+				"pc",
+				"app\\controllers\\posts_controller.rb"
+			],
+			[
+				"gam",
+				"app\\models\\game.rb"
+			],
+			[
+				"addtag",
+				"db\\migrate\\20131113221947_add_tags_to_game.rb"
+			],
+			[
+				"add",
+				"db\\migrate\\20131113221837_add_tag_to_post.rb"
+			],
+			[
+				"appht",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"psh",
+				"app\\views\\posts\\show.html.erb"
+			],
+			[
+				"gin",
+				"app\\views\\games\\index.html.erb"
+			],
+			[
+				"psho",
+				"app\\views\\posts\\show.html.erb"
+			],
+			[
+				"gs",
+				"app\\views\\games\\show.html.erb"
+			],
+			[
+				"pos",
+				"app\\models\\post.rb"
+			],
+			[
+				"gind",
+				"app\\views\\games\\index.html.erb"
+			],
+			[
+				"ps",
+				"app\\views\\posts\\show.html.erb"
+			],
+			[
+				"for",
+				"app\\views\\posts\\_form.html.erb"
+			],
+			[
+				"sch",
+				"db\\schema.rb"
+			],
+			[
+				"pinde",
+				"app\\views\\posts\\index.html.erb"
+			],
+			[
+				"app",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"apphe",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"gsho",
+				"app\\views\\games\\show.html.erb"
+			],
+			[
+				"show",
+				"app\\views\\games\\show.html.erb"
+			],
+			[
+				"index",
+				"app\\views\\games\\index.html.erb"
+			],
+			[
+				"inex",
+				"app\\views\\posts\\index.html.erb"
+			],
+			[
+				"inde",
+				"app\\views\\games\\index.html.erb"
+			],
+			[
+				"gf",
+				"app\\views\\games\\_form.html.erb"
+			],
+			[
+				"g",
+				"app\\models\\game.rb"
+			],
+			[
+				"gshow",
+				"app\\views\\games\\show.html.erb"
+			],
+			[
+				"postsh",
+				"app\\views\\posts\\show.html.erb"
+			],
+			[
+				"po",
+				"app\\models\\post.rb"
+			],
+			[
+				"pf",
+				"app\\views\\posts\\_form.html.erb"
+			],
+			[
+				"rou",
+				"config\\routes.rb"
+			],
+			[
+				"ga",
+				"app\\models\\game.rb"
+			],
+			[
+				"gfr",
+				"app\\views\\games\\_form.html.erb"
+			],
+			[
+				"gemfi",
+				"Gemfile"
+			],
+			[
+				"g_for",
+				"app\\views\\games\\_form.html.erb"
+			],
+			[
+				"ged",
+				"app\\views\\games\\edit.html.erb"
+			],
+			[
+				"gamecon",
+				"app\\controllers\\games_controller.rb"
+			],
+			[
+				"cre",
+				"db\\migrate\\20131112231025_create_posts.rb"
+			],
+			[
+				"game",
+				"app\\models\\game.rb"
+			],
+			[
+				"gamnew",
+				"app\\views\\games\\new.html.erb"
+			],
+			[
+				"lay",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"gain",
+				"app\\views\\games\\index.html.erb"
+			],
+			[
+				"sc",
+				"db\\schema.rb"
+			],
+			[
+				"gamsho",
+				"app\\views\\games\\show.html.erb"
+			],
+			[
+				"gamenew",
+				"app\\views\\games\\new.html.erb"
+			],
+			[
+				"image_",
+				"app\\uploaders\\image_uploader.rb"
+			],
+			[
+				"sesnew",
+				"app\\views\\sessions\\new.html.erb"
+			],
+			[
+				"base",
+				"app\\assets\\stylesheets\\base.css.scss"
+			],
+			[
+				"create",
+				"db\\migrate\\20131108111850_create_games.rb"
+			],
+			[
+				"sessnew",
+				"app\\views\\sessions\\new.html.erb"
+			],
+			[
+				"gamcon",
+				"app\\controllers\\games_controller.rb"
+			],
+			[
+				"r",
+				"config\\routes.rb"
+			],
+			[
+				"new",
+				"app\\views\\sessions\\new.html.erb"
+			],
+			[
+				"aoo",
+				"app\\controllers\\application_controller.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"see",
+				"db\\seeds.rb"
+			],
+			[
+				"sesh",
+				"app\\helpers\\sessions_helper.rb"
+			],
+			[
+				"sess",
+				"app\\controllers\\sessions_controller.rb"
+			],
+			[
+				"us",
+				"app\\models\\user.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"wein",
+				"app\\views\\welcome\\index.html.erb"
+			],
+			[
+				"rout",
+				"config\\routes.rb"
+			],
+			[
+				"wle",
+				"app\\helpers\\welcome_helper.rb"
+			],
+			[
+				"se",
+				"db\\seeds.rb"
+			],
+			[
+				"frie",
+				"db\\migrate\\20131108105307_create_friendly_id_slugs.rb"
+			],
+			[
+				"fir",
+				"config\\initializers\\friendly_id.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"li",
+				"app\\models\\link.rb"
+			],
+			[
+				"creat",
+				"db\\migrate\\20131106225630_create_games.rb"
+			],
+			[
+				"gameind",
+				"app\\views\\games\\index.html.erb"
+			],
+			[
+				"gamesc",
+				"app\\controllers\\games_controller.rb"
+			],
+			[
+				"mig",
+				"db\\migrate\\20131106225922_create_tags.rb"
+			],
+			[
+				"ta",
+				"app\\models\\tag.rb"
+			],
+			[
+				"migr",
+				"db\\migrate\\20131106225630_create_games.rb"
+			],
+			[
+				"blin",
+				"app\\views\\blogs\\index.html.erb"
+			],
+			[
+				"gaind",
+				"app\\views\\games\\index.html.erb"
+			],
+			[
+				"apphel",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"appcss",
+				"app\\assets\\stylesheets\\application.css"
+			],
+			[
+				"weler",
+				"app\\views\\welcome\\index.html.erb"
+			],
+			[
+				"apcs",
+				"app\\assets\\stylesheets\\application.css"
+			],
+			[
+				"res",
+				"app\\assets\\stylesheets\\reset.css.scss"
+			],
+			[
+				"acss",
+				"app\\assets\\stylesheets\\application.css"
+			],
+			[
+				"appli",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				".rb",
+				"config\\application.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
