@@ -1,4 +1,3 @@
 Fire List
 ===========
-
-A list app that syncs the lists instantly. Perfect for shared lists!
+A list app built with EmberJs and Firebase.
