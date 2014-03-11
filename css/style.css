@@ -35,11 +35,11 @@ button { color: #fff; background-color: #F6522D; border: none; font-family: Aria
 #list-actions a i:hover { color: #F6522D; }
 #my-lists { padding-top: 1em; }
 #comments { border-top: 2px solid #919191; padding: 1em; margin-top: 1em; }
-#dropdown { position: relative; }
-#dropdown-content { display: none; position: absolute; z-index: 100; padding-top: 1em; top: -1; background-color: white; border: 1px solid #d2d2d2; border-top: none; }
+#dropdown { position: relative; border: 1px solid #fff; border-bottom: none; }
+#dropdown-content { display: none; position: absolute; z-index: 100; padding-top: 1em; top: -1; background-color: #fff; border: 1px solid #d2d2d2; border-top: none; }
 #dropdown-content a { display: block; margin: 0.1em 0; }
 #dropdown-content a:hover { background-color: #d2d2d2; }
-#dropdown:hover { border: 1px solid #d2d2d2; border-bottom: none; }
+#dropdown:hover { border-color: #d2d2d2; }
 #dropdown:hover #dropdown-content { display: block; }
 
 .action { color: #919191; cursor: pointer; }
