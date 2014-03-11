@@ -41,7 +41,7 @@ button { color: #fff; background-color: #F6522D; border: none; font-family: Aria
 .action:hover { color: #F6522D; }
 * > .show-on-hover { display: none; }
 *:hover > .show-on-hover { display: inline; }
-li.no-items { border: none; font-weight: bold; color: #919191; padding: 0;}
+ul:not(.normal) li.no-items { border: none; font-weight: bold; color: #919191; padding: 0;}
 .auth-cloak { display: none; }
 .load-cloak { }
 .fire { color: #F6522D; }
