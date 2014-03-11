@@ -235,9 +235,6 @@ App.AuthController = Ember.Controller.extend({
   loginUsingGithub: function () {
     this.client.login('github', { rememberMe: true });
   },
-  loginUsingFacebook: function () {
-    this.client.login('facebook', { rememberMe: true });
-  },
   loginUsingGoogle: function () {
     this.client.login('google', { rememberMe: true });
   },
