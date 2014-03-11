@@ -71,7 +71,13 @@
     <section id="list" class="load-cloak cf">
     {{#if id}}
       <h2>
-        {{name}}
+        {{#if isEditing}}
+        {{focus-input value=newName placeholder="Name" enter='updateName' escape-press='cancelEdit'}}
+          <i class="fa fa-pencil action" {{action 'updateName'}}></i>
+          <i class="fa fa-times-circle action" {{action 'cancelEdit'}}></i>
+        {{else}}
+          <span {{action 'edit'}}>{{name}}</span>
+        {{/if}}
         <span id="last-edited" class="pull-right">Last edited: {{lastEdited}}</span>
       </h2>
       <section id="list-actions">
@@ -130,22 +136,14 @@
     <p>
       All lists are public to anyone with the correct URL. This makes it very easy to share and collaborate.
     </p>
-    <h3>How do I use it?</h3>
-    <p>
-      To create a new list you simply give it a name and hit Enter (or the Create-button). 
-      You can edit the lists name by clicking on the name.
-    </p>
-    <p>
-      Once the list is created you can add items and check them off as you complete them. 
-      You can edit an items name by clicking on the name.
-    </p>
+    <h3>Why should I sign in?</h3>
     <p>
       If you are signed in you can add a shortcut to a list so that you can get back to it later.
       Shortcuts are automatically created for lists created while logged in.
       Lists are, however, not connected to any specific user. 
       Removing a shortcut will not remove the actual list.
     </p>
-    <h3>Is there any plans on improvements?</h3>
+    <h3>Are there any plans for new features?</h3>
     <p>
       Yes:
       <ul class="normal">
