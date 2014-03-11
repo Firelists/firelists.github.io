@@ -15,16 +15,16 @@
         <h1 {{action 'toHome'}}><span class="fire">Fire</span>lists</h1>
         <nav class="auth-cloak">
           {{#if auth.authorized}}
-            <div class="dropdown">
-              <a class="dropdown-open">{{auth.currentUser.username}}</a>
-              <div class="dropdown-content">
+            <div id="dropdown">
+              <a id="dropdown-open">{{auth.currentUser.username}}</a>
+              <div id="dropdown-content">
                 <a {{action 'logout'}}>Logout</a>
               </div>
             </div>
           {{else}}
-            <div class="dropdown">
-              <a class="dropdown-open">Login</a>
-              <div class="dropdown-content">
+            <div id="dropdown">
+              <a id="dropdown-open">Login</a>
+              <div id="dropdown-content">
                 <a {{action 'loginUsingGithub'}}>Github</a>
                 <a {{action 'loginUsingGoogle'}}>Google</a>
                 <a {{action 'loginUsingTwitter'}}>Twitter</a>
@@ -73,6 +73,7 @@
 
   <script type="text/x-handlebars" data-template-name="list">
     <section id="list" class="load-cloak cf">
+    {{#if id}}
       <h2>{{name}}</h2>
       <section id="list-actions">
         {{#if auth.authorized}}
@@ -86,6 +87,7 @@
       </section>
       {{render 'newListItem' this}}
       {{render 'listItems' items}}
+    {{/if}}
     </section>
   </script>
 
