@@ -10,13 +10,14 @@ footer > a:hover { color: #F6522D; }
 a { text-decoration: none; color: #F6522D; font-weight: bold; cursor: pointer; }
 ul:not(.normal) { margin: 0; padding: 0; list-style-type: none; }
 ul:not(.normal) li { display: block; font-size: 1.3em; line-height: 1em; color: #363636; border: 1px solid #D2D2D2; padding: 8px; margin: 0.2em 0; }
+[type="text"] { font-family: Arial, sans-serif; border: 1px solid #F6522D; margin: 0; }
+button { color: #fff; background-color: #F6522D; border: none; font-family: Arial, sans-serif; text-align: center; }
+h2 [type="text"] { width: 50%; }
 
 #page { margin: 0 auto; width: 500px; }
 #new-list { padding-top: 1em; }
 #list-url { font-size: 0.75em; }
-[type="text"] { font-family: Arial, sans-serif; border: 1px solid #F6522D; margin: 0; }
 #new-list-item { padding-top: 0.5em; }
-button { color: #fff; background-color: #F6522D; border: none; font-family: Arial, sans-serif; text-align: center; }
 #new-list-item [type="text"], #new-list [type="text"] { float: left; width: 400px; padding: 9px; font-size: 1.5em; }
 #new-list-item button, #new-list button { float: right; width: 80px; padding: 10px 0; font-size: 1.5em; }
 #new-list-item { margin: 0.5em 0; }
