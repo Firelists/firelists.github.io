@@ -15,7 +15,7 @@
         <h1 {{action 'toHome'}}><span class="fire">Fire</span>lists</h1>
         <nav class="auth-cloak">
           {{#if auth.authorized}}
-            <strong>{{auth.currentUser.username}}</strong>
+            <strong>{{auth.currentUser.username}}</strong> | 
             <a {{action 'logout'}}>Logout</a>
           {{else}}
             <div id="auth-container">
