@@ -16,7 +16,9 @@ App.Router.map(function() {
   this.resource('about');
 });
 
-App.ApplicationRoute = Ember.Route.extend({
+App.ApplicationController = Ember.Controller.extend({
+  shouldShowLogin: false,
+  
   actions: {
     login: function () {
       this.get('auth').login();
@@ -26,6 +28,9 @@ App.ApplicationRoute = Ember.Route.extend({
     },
     toHome: function () {
       this.transitionTo('index');
+    },
+    showLogin: function () {
+      this.set('shouldShowLogin', true);
     }
   }
 });
