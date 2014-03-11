@@ -15,7 +15,7 @@
         <h1 {{action 'toHome'}}><span class="fire">Fire</span>lists</h1>
         <nav class="auth-cloak">
           {{#if auth.authorized}}
-            <strong>{{auth.currentUser.username}}</strong> | 
+            <strong>{{auth.currentUser.username}}</strong>
             <a {{action 'logout'}}>Logout</a>
           {{else}}
             <div id="auth-container">
@@ -70,7 +70,10 @@
   <script type="text/x-handlebars" data-template-name="list">
     <section id="list" class="load-cloak cf">
     {{#if id}}
-      <h2>{{name}}</h2>
+      <h2>
+        {{name}}
+        <small class="pull-right">Last edited: {{edited}}</small>
+      </h2>
       <section id="list-actions">
         {{#if auth.authorized}}
           {{#if userHasList}}
