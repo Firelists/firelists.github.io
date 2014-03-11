@@ -16,11 +16,20 @@
         <nav class="auth-cloak">
           {{#if auth.authorized}}
             <div class="dropdown">
-              <strong>{{auth.currentUser.username}}</strong>
-              <a {{action 'logout'}}>Logout</a>
+              <a class="dropdown-open">{{auth.currentUser.username}}</a>
+              <div class="dropdown-content">
+                <a {{action 'logout'}}>Logout</a>
+              </div>
             </div>
           {{else}}
-            <a {{action 'login'}}>Login</a>
+            <div class="dropdown">
+              <a class="dropdown-open">Login</a>
+              <div class="dropdown-content">
+                <a {{action 'loginUsingGithub'}}>Github</a>
+                <a {{action 'loginUsingGoogle'}}>Google</a>
+                <a {{action 'loginUsingTwitter'}}>Twitter</a>
+              </div>
+            </div>
           {{/if}}
         </nav>
       </header>
