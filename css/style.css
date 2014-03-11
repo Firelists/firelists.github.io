@@ -50,3 +50,4 @@ li.no-items { border: none; font-weight: bold; color: #919191; padding: 0;}
 .cf:before, .cf:after { content: " "; display: table; }
 .cf:after { clear: both; }
 .cf { *zoom: 1; }
+.hidden { display: none; }
