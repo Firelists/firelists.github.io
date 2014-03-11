@@ -10,6 +10,7 @@ All checklists are public and available to anyone with the URL. This makes it ea
 It currently contains all the main features that I wanted. But I'd still like to add some things that I'm missing:
 - Paste text and create a new item per line in the copied paragraph.
 - Sorting (drag-and-drop to change display order)
+- Responsive UI (for mobiles)
 
 Ideas for new features are welcome!
 
