@@ -15,16 +15,12 @@
         <h1 {{action 'toHome'}}><span class="fire">Fire</span>lists</h1>
         <nav class="auth-cloak">
           {{#if auth.authorized}}
-            <div id="dropdown">
-              <a class="coal">{{auth.currentUser.username}}</a>
-              <div id="dropdown-content">
-                <a {{action 'logout'}}>Logout</a>
-              </div>
-            </div>
+            <strong>{{auth.currentUser.username}}</strong>
+            <a {{action 'logout'}}>Logout</a>
           {{else}}
-            <div id="dropdown">
+            <div id="auth-container">
               <a>Login</a>
-              <div id="dropdown-content">
+              <div id="auth-actions">
                 <a {{action 'loginUsingGithub'}}>Github</a>
                 <a {{action 'loginUsingGoogle'}}>Google</a>
                 <a {{action 'loginUsingTwitter'}}>Twitter</a>
