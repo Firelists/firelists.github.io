@@ -123,7 +123,7 @@ App.ListController = Ember.ObjectController.extend({
       this.set('isEditing', true);
       this.set('newName', this.get('name'));
     },
-    updateTitle: function () {
+    updateName: function () {
       this.set('name', this.get('newName'));
       this.set('isEditing', false);
       this.set('edited', new Date().getTime());
