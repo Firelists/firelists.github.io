@@ -1,6 +1,6 @@
 body { font-size: 14px; font-family: Arial, sans-serif; color: #363636; }
 h1 { font-family: 'Oswald', Arial, sans-serif; font-weight: 700; font-size: 2.2em; margin: 0; padding: 0; cursor: pointer; display: inline; }
-h2 { font-family: 'Oswald', Arial, sans-serif; font-weight: 700; font-size: 1.8em; margin: 0; padding: 0; }
+h2 { position: relative; font-family: 'Oswald', Arial, sans-serif; font-weight: 700; font-size: 1.8em; margin: 0; padding: 0; }
 h3 { margin: 0; padding: 0; font-family: 'Oswald', Arial, sans-serif; font-weight: 700; }
 header { border-bottom: 4px solid #919191; position: relative; margin: 1em 0; }
 header > nav { position: absolute; right: 0; bottom: 6px; }
@@ -36,7 +36,7 @@ button { color: #fff; background-color: #F6522D; border: none; font-family: Aria
 #my-lists { padding-top: 1em; }
 #comments { border-top: 2px solid #919191; padding: 1em; margin-top: 1em; }
 #auth-actions > a { margin: 0 0 0 0.4em; }
-#last-edited { color: #919191; font-size: 0.5em; }
+#last-edited { color: #919191; font-size: 0.5em; font-weight: normal; position: absolute; bottom: 0; }
 
 .action { color: #919191; cursor: pointer; }
 .action:hover { color: #F6522D; }
