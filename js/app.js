@@ -36,7 +36,6 @@ App.ApplicationController = Ember.Controller.extend({
       this.transitionTo('index');
     },
     showLogin: function () {
-      alert('here');
       this.set('shouldShowLogin', true);
     }
   }
