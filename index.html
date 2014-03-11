@@ -19,8 +19,8 @@
             <a {{action 'logout'}}>Logout</a>
           {{else}}
             <div id="auth-container">
-              <a>Login</a>
-              <div id="auth-actions">
+              <a class="{{shouldShowLogin:hidden}}" {{action 'showLogin'}}>Login</a>
+              <div id="auth-actions" class="{{shouldShowLogin::hidden}}">
                 <a {{action 'loginUsingGithub'}}>Github</a>
                 <a {{action 'loginUsingGoogle'}}>Google</a>
                 <a {{action 'loginUsingTwitter'}}>Twitter</a>
