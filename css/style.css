@@ -36,8 +36,10 @@ button { color: #fff; background-color: #F6522D; border: none; font-family: Aria
 #my-lists { padding-top: 1em; }
 #comments { border-top: 2px solid #919191; padding: 1em; margin-top: 1em; }
 #dropdown { position: relative; }
-#dropdown-content { display: none; position: absolute; top: -1; background-color: white; border: 1px solid #363636; }
-#dropdown-content a { display: block; padding: 0.2em; }
+#dropdown-content { display: none; position: absolute; padding-top: 1em; top: -1; background-color: white; }
+#dropdown-content a { display: block; padding: 0.5em; margin: 0.1em 0; }
+#dropdown-content a:hover { background-color: #d2d2d2; }
+#dropdown:hover {  }
 #dropdown:hover #dropdown-content { display: block; }
 
 .action { color: #919191; cursor: pointer; }
