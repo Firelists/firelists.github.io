@@ -12,18 +12,18 @@
   <script type="text/x-handlebars">
     <div id="page">
       <header>
-        <h1 {{action 'toHome'}}><span class="fire">Fire</span>lists</h1>
+        <h1 {{action "toHome"}}><span class="fire">Fire</span>lists</h1>
         <nav class="auth-cloak">
           {{#if auth.authorized}}
             <strong>{{auth.currentUser.username}}</strong>
-            <a {{action 'logout'}}>Logout</a>
+            <a {{action "logout"}}>Logout</a>
           {{else}}
             <div id="auth-container">
-              <a {{bind-attr class="shouldShowLogin:hidden"}} {{action 'showLogin'}}>Login</a>
+              <a {{bind-attr class="shouldShowLogin:hidden"}} {{action "showLogin"}}>Login</a>
               <div id="auth-actions" {{bind-attr class="shouldShowLogin::hidden"}}>
-                <a {{action 'loginUsingGithub'}}>Github</a>
-                <a {{action 'loginUsingGoogle'}}>Google</a>
-                <a {{action 'loginUsingTwitter'}}>Twitter</a>
+                <a {{action "loginUsingGithub"}}>Github</a>
+                <a {{action "loginUsingGoogle"}}>Google</a>
+                <a {{action "loginUsingTwitter"}}>Twitter</a>
               </div>
             </div>
           {{/if}}
@@ -44,9 +44,9 @@
   <script type="text/x-handlebars" data-template-name="index">
     <section id="new-list" class="cf">
       {{input placeholder="Name of your new list" value=newListName action='newList'}}
-      <button {{action 'newList'}}>Create</button>
+      <button {{action "newList"}}>Create</button>
     </section>
-    {{render 'myLists' auth.lists}}
+    {{render "myLists" auth.lists}}
   </script>
 
   <script type="text/x-handlebars" data-template-name="myLists">
@@ -56,8 +56,8 @@
         <ul>
           {{#each}}
             <li>
-              <a {{action 'gotoList' this}}>{{name}}</a>
-              <i class="fa fa-times pull-right show-on-hover action" {{action 'removeSavedList' this}}></i>
+              <a {{action "gotoList" this}}>{{name}}</a>
+              <i class="fa fa-times pull-right show-on-hover action" {{action "removeSavedList" this}}></i>
             </li>
           {{else}}
             <li class="no-items">No saved lists.</li>
@@ -76,16 +76,16 @@
           <i class="fa fa-pencil action" {{action 'updateName'}}></i>
           <i class="fa fa-times-circle action" {{action 'cancelEdit'}}></i>
         {{else}}
-          <span {{action 'edit'}}>{{name}}</span>
+          <span {{action "edit"}}>{{name}}</span>
         {{/if}}
         <span id="last-edited" class="pull-right">Last edited: {{lastEdited}}</span>
       </h2>
       <section id="list-actions">
         {{#if auth.authorized}}
           {{#if userHasList}}
-            <i class="fa fa-times pull-right action" {{action 'removeList'}}></i>
+            <i class="fa fa-times pull-right action" {{action "removeList"}}></i>
           {{else}}
-            <i class="fa fa-save pull-right action" {{action 'saveList'}}></i>
+            <i class="fa fa-save pull-right action" {{action "saveList"}}></i>
           {{/if}}
         {{/if}}
         <section id="list-url"><a {{bind-attr href=url}}>{{url}}</a></section>
@@ -108,12 +108,12 @@
             <i class="fa fa-check action" {{action toggleDone}}></i>
             {{#if isEditing}}
              {{focus-input value=newTitle placeholder="Title" enter='updateTitle' escape-press='cancelEdit'}}
-             <i class="fa fa-pencil action" {{action 'updateTitle'}}></i>
-             <i class="fa fa-times-circle action" {{action 'cancelEdit'}}></i>
+             <i class="fa fa-pencil action" {{action "updateTitle"}}></i>
+             <i class="fa fa-times-circle action" {{action "cancelEdit"}}></i>
             {{else}}
-              <span {{action 'edit'}}>{{title}}</span>
+              <span {{action "edit"}}>{{title}}</span>
             {{/if}}
-            <i class="fa fa-times pull-right show-on-hover action" {{action removeItem this}}></i>
+            <i class="fa fa-times pull-right show-on-hover action" {{action "removeItem" this}}></i>
           </li>
         {{/each}}
       </ul>
