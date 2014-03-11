@@ -92,7 +92,7 @@ App.ListController = Ember.ObjectController.extend({
   newName: '',
 
   url: function () {
-    return 'http://firelist.github.io/#/' + this.get('id');
+    return 'http://firelists.github.io/#/' + this.get('id');
   }.property('id'),
   userHasList: function () {
     var lists = this.get('auth').lists;
