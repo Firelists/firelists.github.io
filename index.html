@@ -72,7 +72,7 @@
     {{#if id}}
       <h2>
         {{#if isEditing}}
-        {{focus-input value=newName placeholder="Name" enter='updateName' escape-press='cancelEdit'}}
+          {{focus-input value=newName placeholder="Name" enter='updateName' escape-press='cancelEdit'}}
           <i class="fa fa-pencil action" {{action 'updateName'}}></i>
           <i class="fa fa-times-circle action" {{action 'cancelEdit'}}></i>
         {{else}}
