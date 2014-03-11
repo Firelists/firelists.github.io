@@ -20,8 +20,14 @@ App.ApplicationController = Ember.Controller.extend({
   shouldShowLogin: false,
   
   actions: {
-    login: function () {
-      this.get('auth').login();
+    loginUsingTwitter: function () {
+      this.get('auth').loginUsingTwitter();
+    },
+    loginUsingGoogle: function () {
+      this.get('auth').loginUsingGoogle();
+    },
+    loginUsingGithub: function () {
+      this.get('auth').loginUsingGithub();
     },
     logout: function () {
       this.get('auth').logout();
@@ -30,6 +36,7 @@ App.ApplicationController = Ember.Controller.extend({
       this.transitionTo('index');
     },
     showLogin: function () {
+      alert('here');
       this.set('shouldShowLogin', true);
     }
   }
