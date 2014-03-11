@@ -88,6 +88,9 @@ App.ListRoute = Ember.Route.extend({
 });
 
 App.ListController = Ember.ObjectController.extend({
+  isEditing: false,
+  newName: '',
+
   url: function () {
     return 'http://firelist.github.io/#/' + this.get('id');
   }.property('id'),
@@ -115,6 +118,18 @@ App.ListController = Ember.ObjectController.extend({
       if(lists) {
         lists.removeObject(this.get('id'));
       }
+    },
+    edit: function () {
+      this.set('isEditing', true);
+      this.set('newName', this.get('name'));
+    },
+    updateTitle: function () {
+      this.set('name', this.get('newName'));
+      this.set('isEditing', false);
+      this.set('edited', new Date().getTime());
+    },
+    cancelEdit: function () {
+      this.set('isEditing', false);
     }
   }
 });
@@ -142,7 +157,6 @@ App.ListItemController = Ember.ObjectController.extend({
     edit: function () {
       this.set('isEditing', true);
       this.set('newTitle', this.get('title'));
-      App.ListsController.cancelAllItems();
     },
     updateTitle: function () {
       this.set('title', this.get('newTitle'));
