@@ -36,7 +36,7 @@ button { color: #fff; background-color: #F6522D; border: none; font-family: Aria
 #my-lists { padding-top: 1em; }
 #comments { border-top: 2px solid #919191; padding: 1em; margin-top: 1em; }
 #auth-actions > a { margin: 0 0 0 0.4em; }
-#last-edited { color: #919191; font-size: 0.5em; font-weight: normal; position: absolute; bottom: 0; }
+#last-edited { color: #919191; font-size: 0.5em; font-weight: normal; position: absolute; bottom: 0; right: 0; }
 
 .action { color: #919191; cursor: pointer; }
 .action:hover { color: #F6522D; }
