@@ -4,11 +4,11 @@ h2 { font-family: 'Oswald', Arial, sans-serif; font-weight: 700; font-size: 1.8e
 h3 { margin: 0; padding: 0; font-family: 'Oswald', Arial, sans-serif; font-weight: 700; }
 header { border-bottom: 4px solid #919191; position: relative; margin: 1em 0; }
 header > nav { position: absolute; right: 0; bottom: 6px; }
-footer { margin-top: 2em; padding: 0; text-align: center; }
+footer { margin: 2em 0; padding: 0; text-align: center; }
 footer > a { margin: 0 0.5em; color: #919191; }
 footer > a:hover { color: #F6522D; }
 a { text-decoration: none; color: #F6522D; font-weight: bold; cursor: pointer; }
-ul { margin: 0; padding: 0; list-style-type: none; }
+ul:not(.normal) { margin: 0; padding: 0; list-style-type: none; }
 ul:not(.normal) li { display: block; font-size: 1.3em; line-height: 1em; color: #363636; border: 1px solid #D2D2D2; padding: 8px; margin: 0.2em 0; }
 
 #page { margin: 0 auto; width: 500px; }
@@ -34,6 +34,11 @@ button { color: #fff; background-color: #F6522D; border: none; font-family: Aria
 #list-actions a i { color: #919191; }
 #list-actions a i:hover { color: #F6522D; }
 #my-lists { padding-top: 1em; }
+#comments { background-color: #d2d2d2; padding: 1em; margin-top: 1em; }
+#dropdown { position: relative; }
+#dropdown-content { display: none; position: absolute; top: -1; background-color: white; border: 1px solid #363636; }
+#dropdown-content a { display: block; padding: 0.2em; }
+#dropdown:hover #dropdown-content { display: block; }
 
 .action { color: #919191; cursor: pointer; }
 .action:hover { color: #F6522D; }
