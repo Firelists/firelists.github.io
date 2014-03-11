@@ -95,6 +95,10 @@ App.ListController = Ember.ObjectController.extend({
     var lists = this.get('auth').lists;
     return lists && lists.contains(this.get('id'));
   }.property('id', 'auth.currentUser.lists'),
+  lastEdited: function () {
+    var lastEdited = moment(new Date(this.get('edited')));
+    return lastEdited.fromNow();
+  }.property('edited'),
 
   actions: {
     removeItem: function (item) {
