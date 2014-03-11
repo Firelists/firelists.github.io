@@ -220,7 +220,7 @@ App.AuthController = Ember.Controller.extend({
         var properties = {
           ref: userRef,
           id: user.uid,
-          username: user.id
+          username: user.displayName
         };
         var controller = this;
         userRef.once('value', function (snapshot) {
