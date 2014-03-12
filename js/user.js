@@ -1,4 +1,4 @@
-App.MyListsController = Ember.ArrayController.extend({
+window.App.MyListsController = Ember.ArrayController.extend({
   itemController: 'savedList',
   sortAscending: true,
 
@@ -12,20 +12,20 @@ App.MyListsController = Ember.ArrayController.extend({
   }
 });
 
-App.SavedListController = Ember.ObjectController.extend({
+window.App.SavedListController = Ember.ObjectController.extend({
   init: function () {
     var listRef = new Firebase(dbLists + this.get('model'));
     this.set('model', EmberFire.Object.create({ ref: listRef }));  
   }
 });
 
-App.User = EmberFire.Object.extend({
+window.App.User = EmberFire.Object.extend({
   saveList: function (list) {
     this.get('ref').child('/lists/' + list.get('id')).set(list.get('id'));
   }
 });
 
-App.AuthController = Ember.Controller.extend({
+window.App.AuthController = Ember.Controller.extend({
   authorized: false,
   currentUser: null,
   lists: null,
