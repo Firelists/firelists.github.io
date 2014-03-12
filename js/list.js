@@ -1,4 +1,4 @@
-App.ListRoute = Ember.Route.extend({
+window.App.ListRoute = Ember.Route.extend({
   model: function (params) {
     return new Firebase(dbLists + params.list_id);
   },
@@ -17,7 +17,7 @@ App.ListRoute = Ember.Route.extend({
   }
 });
 
-App.ListController = Ember.ObjectController.extend({
+window.App.ListController = Ember.ObjectController.extend({
   isEditing: false,
   newName: '',
 
