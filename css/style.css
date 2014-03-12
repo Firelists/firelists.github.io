@@ -10,7 +10,7 @@ footer > a:hover { color: #F6522D; }
 a { text-decoration: none; color: #F6522D; font-weight: bold; cursor: pointer; }
 ul:not(.normal) { margin: 0; padding: 0; list-style-type: none; }
 ul:not(.normal) li { display: block; font-size: 1.3em; line-height: 1em; color: #363636; border: 1px solid #D2D2D2; padding: 8px; margin: 0.2em 0; }
-ul:not(.normal) li span { padding: 0 1em; display: block; }
+ul:not(.normal) li span { padding: 0 1.5em; display: block; }
 [type="text"] { font-family: Arial, sans-serif; border: 1px solid #F6522D; margin: 0; }
 button { color: #fff; background-color: #F6522D; border: none; font-family: Arial, sans-serif; text-align: center; }
 h2 [type="text"] { width: 50%; }
