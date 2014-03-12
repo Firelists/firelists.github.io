@@ -105,6 +105,7 @@
         {{#each}}
           <li {{bind-attr class="done isEditing:editing"}}>
             <i class="fa fa-check action pull-left" {{action toggleDone}}></i>
+            <i class="fa fa-times pull-right show-on-hover action" {{action "removeItem" this}}></i>
             {{#if isEditing}}
              {{focus-input value=newTitle placeholder="Title" enter='updateTitle' escape-press='cancelEdit'}}
              <i class="fa fa-pencil action" {{action "updateTitle"}}></i>
@@ -112,7 +113,6 @@
             {{else}}
               <span {{action "edit"}}>{{title}}</span>
             {{/if}}
-            <i class="fa fa-times pull-right show-on-hover action" {{action "removeItem" this}}></i>
           </li>
         {{/each}}
       </ul>
