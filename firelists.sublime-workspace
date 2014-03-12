@@ -155,31 +155,23 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4511,
-				"line_ending": "Unix"
+				"buffer_size": 5960,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/list.js",
+			"settings":
+			{
+				"buffer_size": 1860,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 2905,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/app.js",
-			"settings":
-			{
-				"buffer_size": 6757,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 65,
+				"buffer_size": 3938,
 				"line_ending": "Windows"
 			}
 		}
@@ -236,6 +228,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Andreas/Repositories/firelists/js/app.js",
+		"/C/Users/Andreas/Repositories/firelists/js/user.js",
 		"/C/Users/Andreas/Repositories/firelists/README.md",
 		"/C/Users/Andreas/Repositories/m1-app/views/session/signup.html",
 		"/C/Users/Andreas/Repositories/m1-app/app/user/session.js",
@@ -361,9 +355,7 @@
 		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/migrate/20131112231025_create_posts.rb",
 		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/uploaders/image_uploader.rb",
 		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/views/sessions/new.html.erb",
-		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/migrate/20131108111850_create_games.rb",
-		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/controllers/application_controller.rb",
-		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/app/helpers/sessions_helper.rb"
+		"/C/Users/Andreas/Repositories/andreas-mcdermott-site/db/migrate/20131108111850_create_games.rb"
 	],
 	"find":
 	{
@@ -382,6 +374,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"href=\"#\"",
 			"get('/'",
 			"/",
 			"CBDBFC",
@@ -404,7 +397,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -413,15 +406,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4511,
+						"buffer_size": 5960,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3981,
-								3981
+								926,
+								926
 							]
 						],
 						"settings":
@@ -431,55 +424,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1079.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "css/style.css",
+					"file": "js/list.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2905,
+						"buffer_size": 1860,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2404,
-								2404
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 21.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6757,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6342,
-								6342
+								123,
+								123
 							]
 						],
 						"settings":
@@ -489,32 +454,32 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2533.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "README.md",
+					"buffer": 2,
+					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 65,
+						"buffer_size": 3938,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								65,
-								65
+								626,
+								626
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

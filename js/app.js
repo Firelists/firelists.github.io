@@ -6,6 +6,7 @@ var dbUsers = dbRoot + "users/";
 var dbRef = new Firebase(dbRoot);
 
 window.App = Ember.Application.create({
+  customEvents: {touchend: "click"},
   ready: function () {
     this.register('main:auth', App.AuthController);
     this.inject('route', 'auth', 'main:auth');

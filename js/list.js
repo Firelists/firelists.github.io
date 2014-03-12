@@ -11,7 +11,7 @@ window.App.ListRoute = Ember.Route.extend({
         controller.set('model', list);
       }
       else {
-        route.transitionTo('index');
+        route.transitionTo('index'); // TODO: Add message why transition happened
       }
     });
   }
