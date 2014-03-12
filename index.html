@@ -35,7 +35,6 @@
       </main>
 
       <footer>
-        {{#link-to 'about'}}About{{/link-to}}
         <a href="https://github.com/Firelists/firelists.github.io"><i class="fa fa-github"></i></a>
       </footer>
     </div>
@@ -127,50 +126,6 @@
     </section>
   </script>
 
-  <script type="text/x-handlebars" data-template-name="about">
-    <h2>About Firelists</h2>
-    <h3>What is it?</h3>
-    <p>
-      It is a small tool for creating and sharing checklists that synchronize automatically.
-    </p>
-    <p>
-      All lists are public to anyone with the correct URL. This makes it very easy to share and collaborate.
-    </p>
-    <h3>Why should I sign in?</h3>
-    <p>
-      If you are signed in you can add a shortcut to a list so that you can get back to it later.
-      Shortcuts are automatically created for lists created while logged in.
-      Lists are, however, not connected to any specific user. 
-      Removing a shortcut will not remove the actual list.
-    </p>
-    <h3>Are there any plans for new features?</h3>
-    <p>
-      Yes:
-      <ul class="normal">
-        <li>Paste paragrah of text (from an email for example) and turn each line into a new list item.</li>
-        <li>Sort list items.</li>
-        <li>Responsive UI for phones.</li>
-      </ul>
-    </p>
-    <p>
-      If you have a feature request, please leave it in a comment below.
-    </p>
-    <h3>Who made it?</h3>
-    <p>
-      My name is Andreas McDermott and I started this to try out EmberJs.
-    </p>
-    <p>
-      The code is available on <a href="http://github.com/firelists/firelists.github.io">Github</a>.
-      Because this is my first application using EmberJs, the code might not be very good. I'll try to
-      clean it up as I go along, but would also be happy to accept suggestions on how to improve it from
-      people with more experience.
-    </p>
-    <section id="comments">
-      <div id="disqus_thread"></div>
-      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </section>
-  </script>
-
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
   <script src="js/libs/jquery-1.10.2.js"></script>
   <script src="js/libs/handlebars-1.1.2.js"></script>
@@ -183,14 +138,6 @@
   <script src="js/user.js"></script>
   <script src="js/list.js"></script>
   <script src="js/listitems.js"></script>
-  <script type="text/javascript">
-    var disqus_shortname = 'firelists'; 
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
