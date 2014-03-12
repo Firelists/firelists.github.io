@@ -13,7 +13,6 @@ window.App = Ember.Application.create({
 
 window.App.Router.map(function() {
   this.resource('list', { path: '/:list_id' });
-  this.resource('about');
 });
 
 window.App.ApplicationController = Ember.Controller.extend({
