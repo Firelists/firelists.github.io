@@ -1,4 +1,6 @@
-var dbRoot = "https://firelists.firebaseio.com/";
+var dev = true;
+
+var dbRoot = dev ? "https://firelists-dev.firebaseio.com/" : "https://firelists.firebaseio.com/";
 var dbLists = dbRoot + "lists/";
 var dbUsers = dbRoot + "users/";
 var dbRef = new Firebase(dbRoot);
@@ -20,14 +22,17 @@ App.ApplicationController = Ember.Controller.extend({
   shouldShowLogin: false,
   
   actions: {
+    loginDev: function () {
+      this.get('auth').loginAnonymously();
+    },
     loginUsingTwitter: function () {
-      this.get('auth').loginUsingTwitter();
+      dev ? loginDev() : this.get('auth').loginUsingTwitter();
     },
     loginUsingGoogle: function () {
-      this.get('auth').loginUsingGoogle();
+      dev ? loginDev() : this.get('auth').loginUsingGoogle();
     },
     loginUsingGithub: function () {
-      this.get('auth').loginUsingGithub();
+      dev ? loginDev() : this.get('auth').loginUsingGithub();
     },
     logout: function () {
       this.get('auth').logout();
@@ -257,6 +262,9 @@ App.AuthController = Ember.Controller.extend({
       }
       Ember.$('.auth-cloak').show();
     }.bind(this));
+  },
+  loginAnonymously: function () {
+    this.client.login('anonymous');
   },
   loginUsingTwitter: function () {
     this.client.login('twitter', { rememberMe: true });
