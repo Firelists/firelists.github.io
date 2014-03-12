@@ -1,4 +1,4 @@
-App.ListItemsController = Ember.ArrayController.extend({
+window.App.ListItemsController = Ember.ArrayController.extend({
   itemController: 'listItem',
   sortProperties: ['done', 'order', 'title', 'edited'],
   sortAscending: true,
@@ -8,7 +8,7 @@ App.ListItemsController = Ember.ArrayController.extend({
   }.property('this.@each.done')
 });
 
-App.ListItemController = Ember.ObjectController.extend({
+window.App.ListItemController = Ember.ObjectController.extend({
   isEditing: false,
   newTitle: '',
 
@@ -33,7 +33,7 @@ App.ListItemController = Ember.ObjectController.extend({
   }
 });
 
-App.NewListItemController = Ember.ObjectController.extend({
+window.App.NewListItemController = Ember.ObjectController.extend({
   newListItemTitle: '',
 
   actions: {
