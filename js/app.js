@@ -106,6 +106,7 @@ App.ListController = Ember.ObjectController.extend({
   actions: {
     removeItem: function (item) {
       this.get('items').removeObject(item);
+      this.set('edited', new Date().getTime());
     },
     saveList: function () {
       var user = this.get('auth').currentUser;
