@@ -3,7 +3,7 @@ var dbLists = dbRoot + "lists/";
 var dbUsers = dbRoot + "users/";
 var dbRef = new Firebase(dbRoot);
 
-App = Ember.Application.create({
+window.App = Ember.Application.create({
   ready: function () {
     this.register('main:auth', App.AuthController);
     this.inject('route', 'auth', 'main:auth');
@@ -11,12 +11,12 @@ App = Ember.Application.create({
   }
 });
 
-App.Router.map(function() {
+window.App.Router.map(function() {
   this.resource('list', { path: '/:list_id' });
   this.resource('about');
 });
 
-App.ApplicationController = Ember.Controller.extend({
+window.App.ApplicationController = Ember.Controller.extend({
   shouldShowLogin: false,
   
   actions: {
@@ -41,7 +41,7 @@ App.ApplicationController = Ember.Controller.extend({
   }
 });
 
-App.IndexController = Ember.Controller.extend({
+window.App.IndexController = Ember.Controller.extend({
   newListName: '',
 
   actions: {
