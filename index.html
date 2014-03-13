@@ -48,7 +48,7 @@
       {{input placeholder="Name of your new list" value=newListName action='newList'}}
       <button {{action "newList"}}>Create</button>
     </section>
-    {{render "myLists" auth.lists}}
+    {{render "myLists" auth.currentUser.lists}}
   </script>
 
   <script type="text/x-handlebars" data-template-name="myLists">

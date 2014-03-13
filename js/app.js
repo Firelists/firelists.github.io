@@ -1,4 +1,4 @@
-var dev = true;
+var dev = false;
 
 var dbRoot = dev ? "https://firelists-dev.firebaseio.com/" : "https://firelists.firebaseio.com/";
 var dbLists = dbRoot + "lists/";
@@ -35,7 +35,7 @@ window.App.ApplicationController = Ember.Controller.extend({
       this.get('auth').logout();
     },
     toHome: function () {
-      this.transitionTo('index');
+      this.transitionToRoute('index');
     },
     showLogin: function () {
       if(dev) {
@@ -53,24 +53,27 @@ window.App.IndexController = Ember.Controller.extend({
 
   actions: {
     newList: function () {
-      var newListRef = new Firebase(dbLists).push();
-      var user = this.get('auth').currentUser;
+      var input = this.get('newListName').trim();
+      if(input.length > 0) {
+        var newListRef = new Firebase(dbLists).push();
+        var user = this.get('auth').currentUser;
 
-      var list = EmberFire.Object.create({ 
-        ref: newListRef, 
-        id: newListRef.name(),
-        name: this.get('newListName'),
-        created: new Date().getTime(),
-        edited: new Date().getTime(),
-        user: user ? user.id : '',
-        items: {_type: 'array'},
-        nextOrderNo: 0
-      });
-      if(user) {
-        user.saveList(list);
+        var list = EmberFire.Object.create({ 
+          ref: newListRef, 
+          id: newListRef.name(),
+          name: input,
+          created: new Date().getTime(),
+          edited: new Date().getTime(),
+          user: user ? user.id : '',
+          items: EmberFire.Array.create({ ref: newListRef.child('items') }),
+          nextOrderNo: 0
+        });
+        if(user) {
+          user.saveList(list);
+        }
+        this.set('newListName', '');
+        this.transitionToRoute('list', list.id);
       }
-      this.set('newListName', '');
-      this.transitionToRoute('list', list.id);
     }
   }
 });

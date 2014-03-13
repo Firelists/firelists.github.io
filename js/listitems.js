@@ -38,20 +38,23 @@ window.App.NewListItemController = Ember.ObjectController.extend({
 
   actions: {
     newItem: function () {
-      var newItemRef = new Firebase(dbLists + this.get('id') + '/items/').push();
-      var item = EmberFire.Object.create({ref: newItemRef});
-      var user = this.get('auth').currentUser;
-      item.setProperties({
-        user: user ? user.id : 'anonymous',
-        created: new Date().getTime(),
-        edited: new Date().getTime(),
-        done: false,
-        title: this.get('newListItemTitle'),
-        order: this.get('nextOrderNo')
-      });   
-      this.incrementProperty('nextOrderNo', 1);
-      this.set('newListItemTitle', '');
-      this.set('edited', new Date().getTime());
+      var input = this.get('newListItemTitle').trim();
+      if(input.length > 0) {
+        var newItemRef = new Firebase(dbLists + this.get('id') + '/items/').push();
+        var item = EmberFire.Object.create({ref: newItemRef});
+        var user = this.get('auth').currentUser;
+        item.setProperties({
+          user: user ? user.id : 'anonymous',
+          created: new Date().getTime(),
+          edited: new Date().getTime(),
+          done: false,
+          title: input,
+          order: this.get('nextOrderNo')
+        });   
+        this.incrementProperty('nextOrderNo', 1);
+        this.set('newListItemTitle', '');
+        this.set('edited', new Date().getTime());
+      }
     }
   }
 });

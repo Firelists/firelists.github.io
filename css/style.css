@@ -66,6 +66,7 @@ ul:not(.normal) li.no-items { border: none; font-weight: bold; color: #919191; p
   #page { width: 98%; }
   #new-list-item [type="text"], #new-list [type="text"] { float: none; width: 97.5%; border-width: 1%; margin: 0; }
   #new-list-item button, #new-list button { float: none; width: 100%; }
+  #list-items li.editing [type="text"] { width: 60%; }
   #last-edited { display: block; float: none; margin: 0; }
   .show-on-hover { display: inline; }
 }
