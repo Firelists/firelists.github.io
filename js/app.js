@@ -1,4 +1,4 @@
-var dev = true;
+var dev = false;
 
 var dbRoot = dev ? "https://firelists-dev.firebaseio.com/" : "https://firelists.firebaseio.com/";
 var dbLists = dbRoot + "lists/";
