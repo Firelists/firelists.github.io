@@ -6,6 +6,9 @@ window.App.List = EmberFire.Object.extend({
   setName: function (newName) {
     this.set('name', newName);
     this.set('edited', new Date().getTime());
+  },
+  toggleLock: function () {
+    this.set('locked', this.get('locked') === true ? false : true);
   }
 });
 
@@ -32,6 +35,9 @@ window.App.ListController = Ember.ObjectController.extend({
   isEditing: false,
   newName: '',
 
+  isLocked: function () {
+    return this.get('locked') === true;
+  }.property('locked'),
   url: function () {
     return 'http://firelists.github.io/#/' + this.get('id');
   }.property('id'),
@@ -39,6 +45,13 @@ window.App.ListController = Ember.ObjectController.extend({
     var user = this.get('auth').currentUser;
     return user && user.hasList(this.get('id'));
   }.property('id', 'auth.currentUser.lists'),
+  userIsCreator: function () {
+    var currentUser = this.get('auth').currentUser;
+    return currentUser && currentUser.get('id') === this.get('user');
+  }.property('user', 'auth.currentUser.id'),
+  canEditList: function () {
+    return this.get('userIsCreator') || this.get('locked') !== true;
+  }.property('userIsCreator', 'locked'),
   lastEdited: function () {
     var lastEdited = moment(new Date(this.get('edited')));
     return lastEdited.fromNow();
@@ -61,8 +74,10 @@ window.App.ListController = Ember.ObjectController.extend({
       }
     },
     edit: function () {
-      this.set('isEditing', true);
-      this.set('newName', this.get('name'));
+      if(this.get('canEditList')) {
+        this.set('isEditing', true);
+        this.set('newName', this.get('name'));
+      }
     },
     updateName: function () {
       this.get('model').setName(this.get('newName'));
@@ -70,6 +85,9 @@ window.App.ListController = Ember.ObjectController.extend({
     },
     cancelEdit: function () {
       this.set('isEditing', false);
+    },
+    toggleLock: function () {
+      this.get('model').toggleLock();
     }
   }
 });

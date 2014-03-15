@@ -18,6 +18,14 @@ window.App.Router.map(function() {
   this.resource('list', { path: '/:list_id' });
 });
 
+window.App.ApplicationRoute = Ember.Route.extend({
+  actions: {
+    loading: function (transition, originRoute) {
+
+    }
+  }
+});
+
 window.App.ApplicationController = Ember.Controller.extend({
   shouldShowLogin: false,
   
@@ -66,7 +74,8 @@ window.App.IndexController = Ember.Controller.extend({
           edited: new Date().getTime(),
           user: user ? user.id : '',
           items: EmberFire.Array.create({ ref: newListRef.child('items') }),
-          nextOrderNo: 0
+          nextOrderNo: 0,
+          locked: false
         });
         if(user) {
           user.saveList(list);

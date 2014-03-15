@@ -10,7 +10,7 @@ footer > a:hover { color: #F6522D; }
 a { text-decoration: none; color: #F6522D; font-weight: bold; cursor: pointer; }
 ul:not(.normal) { margin: 0; padding: 0; list-style-type: none; }
 ul:not(.normal) li { display: block; font-size: 1.3em; line-height: 1em; color: #363636; border: 1px solid #D2D2D2; padding: 8px; margin: 0.2em 0; }
-ul:not(.normal) li span { padding: 0 1.5em; display: block; }
+ul:not(.normal) li span { padding: 0 2.5em 0 1.5em; display: block; }
 [type="text"] { font-family: Arial, sans-serif; border: 1px solid #F6522D; margin: 0 -2px 0 0; }
 button { color: #fff; background-color: #F6522D; border: none; font-family: Arial, sans-serif; text-align: center; }
 h2 [type="text"] { width: 50%; }
@@ -31,7 +31,8 @@ h2 [type="text"] { width: 50%; }
 #list-items li.editing > i { margin: 6px 0; }
 #list-items li.editing [type="text"] { padding: 4px; font-size: 1em; width: 350px; margin: 0 0 0 10px; }
 #list-items i.fa-pencil, #list-items i.fa-times-circle { font-size: 1.1em; margin: 0 2px !important; }
-#list-stats { font-weight: bold; color: #919191; text-align: right; padding-top: 1em; }
+#list-stats { font-weight: bold; color: #919191; padding-top: 1em; }
+#list-show { padding-top: 1em; }
 #list-actions { margin-top: 0.5em; border-bottom: 1px solid #d2d2d2; border-top: 1px solid #d2d2d2; padding: 4px; }
 #list-actions a i { color: #919191; }
 #list-actions a i:hover { color: #F6522D; }

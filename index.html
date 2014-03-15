@@ -80,41 +80,59 @@
         {{else}}
           <span {{action "edit"}}>{{name}}</span>
         {{/if}}
+        {{#if isLocked}}<i class="fa fa-lock"></i>{{/if}}
         <span id="last-edited">Last edited: {{lastEdited}}</span>
       </h2>
       <section id="list-actions">
         {{#if auth.authorized}}
           {{#if userHasList}}
-            <i class="fa fa-times pull-right action" {{action "removeList"}}></i>
+            <div class="pull-right">
+              {{#if userIsCreator}}
+                <i {{bind-attr class=":fa isLocked:fa-unlock:fa-lock :action"}} {{action "toggleLock"}}></i>
+              {{/if}}
+              <i class="fa fa-times action" {{action "removeList"}}></i>
+            </div>
           {{else}}
             <i class="fa fa-save pull-right action" {{action "saveList"}}></i>
           {{/if}}
         {{/if}}
         <section id="list-url"><a {{bind-attr href=url}}>{{url}}</a></section>
       </section>
-      {{render 'newListItem' this}}
+      {{#if canEditList}}
+        {{render 'newListItem' this}}
+      {{/if}}
       {{render 'listItems' items}}
     {{/if}}
     </section>
   </script>
 
   <script type="text/x-handlebars" data-template-name="listItems">
-    <section id="list-stats" class="cf">
-      Total: <span class="coal">{{length}}</span>
-      Remaining: <span class="coal">{{remaining}}</span>
-    </section>
+    <div class="cf">
+      <div id="list-show" class="pull-left">
+        <a class="action" {{action "toggleShowAll"}}><i {{bind-attr class=":fa showAll:fa-eye-slash:fa-eye"}}></i></a>
+      </div>
+      <div id="list-stats" class="pull-right">
+        Total: <span class="coal">{{length}}</span>
+        Remaining: <span class="coal">{{remaining}}</span>
+      </div>
+    </div>
     <section id="list-items" class="cf">
       <ul>
-        {{#each}}
+        {{#each filtered}}
           <li {{bind-attr class="done isEditing:editing"}}>
-            <i class="fa fa-check action pull-left" {{action "toggleDone"}}></i>
-            <i class="fa fa-times pull-right show-on-hover action" {{action "removeItem" this}}></i>
+            <i {{bind-attr class=":fa :fa-check canEditItem:action :pull-left"}} {{action "toggleDone"}}></i>
             {{#if isEditing}}
-             {{focus-input value=newTitle placeholder="Title" enter='updateTitle' escape-press='cancelEdit'}}
-             <i class="fa fa-pencil action" {{action "updateTitle"}}></i>
+             {{focus-input value=newTitle placeholder="Title" enter='updateTitle' escape-press='cancelEdit' focus-out="cancelEdit"}}
+             <i class="fa fa-save action" {{action "updateTitle"}}></i>
              <i class="fa fa-times-circle action" {{action "cancelEdit"}}></i>
             {{else}}
-              <span {{action "edit"}}>{{title}}</span>
+              {{#if canEditItem}}
+                <div class="pull-right show-on-hover">
+                  <i class="fa fa-pencil action" {{action "edit"}}></i>
+                  <i class="fa fa-times action" {{action "removeItem" this}}></i>
+                </div>
+                {{/if}}
+              <span {{action "edit" on="doubleClick"}}>{{title}}</span>
             {{/if}}
           </li>
         {{/each}}
