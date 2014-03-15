@@ -27,7 +27,9 @@ window.App.User = EmberFire.Object.extend({
     this.get('lists').removeObject(listId);
   },
   hasList: function (listId) {
-    return this.get('lists').contains(listId);
+    if(this.get('lists')) {
+      return this.get('lists').contains(listId);
+    }
   }
 });
 
