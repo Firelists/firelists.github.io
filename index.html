@@ -75,12 +75,12 @@
       <h2>
         {{#if isEditing}}
           {{focus-input value=newName placeholder="Name" enter='updateName' escape-press='cancelEdit'}}
-          <i class="fa fa-pencil action" {{action 'updateName'}}></i>
+          <i class="fa fa-save action" {{action 'updateName'}}></i>
           <i class="fa fa-times-circle action" {{action 'cancelEdit'}}></i>
         {{else}}
-          <span {{action "edit"}}>{{name}}</span>
+          <span {{action "edit" on="doubleClick"}}>{{name}}</span>
+          {{#if isLocked}}<i class="fa fa-lock"></i>{{/if}}
         {{/if}}
-        {{#if isLocked}}<i class="fa fa-lock"></i>{{/if}}
         <span id="last-edited">Last edited: {{lastEdited}}</span>
       </h2>
       <section id="list-actions">
