@@ -199,7 +199,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6772,
+				"buffer_size": 6789,
 				"line_ending": "Windows"
 			}
 		}
@@ -585,15 +585,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6772,
+						"buffer_size": 6789,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3228,
-								3239
+								2989,
+								2989
 							]
 						],
 						"settings":

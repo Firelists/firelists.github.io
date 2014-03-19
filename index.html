@@ -119,12 +119,14 @@
     <section id="list-items" class="cf">
       <ul>
         {{#each filtered}}
-          <li {{bind-attr class="done isEditing:editing"}}>
+          <li {{bind-attr class="done isEditing:editing :cf"}}>
             <i {{bind-attr class=":fa :fa-check canEditItem:action :pull-left"}} {{action "toggleDone"}}></i>
             {{#if isEditing}}
-             {{focus-input value=newTitle placeholder="Title" enter='updateTitle' escape-press='cancelEdit' focus-out="cancelEdit"}}
-             <i class="fa fa-save action" {{action "updateTitle"}}></i>
-             <i class="fa fa-times-circle action" {{action "cancelEdit"}}></i>
+              <div class="pull-right">
+                <i class="fa fa-save action" {{action "updateTitle"}}></i>
+                <i class="fa fa-times-circle action" {{action "cancelEdit"}}></i>
+              </div>
+              {{focus-input value=newTitle placeholder="Title" enter='updateTitle' escape-press='cancelEdit' focus-out="cancelEdit"}}
             {{else}}
               {{#if canEditItem}}
                 <div class="pull-right show-on-hover">
