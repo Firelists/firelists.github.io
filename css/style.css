@@ -17,7 +17,7 @@ ul:not(.normal) li > i { padding: 8px; }
 ul:not(.normal) li > div > i { padding: 7px 4px; }
 ul:not(.normal) li > div > i:first-child { padding-left: 8px; }
 ul:not(.normal) li > div > i:last-child { padding-right: 8px; }
-ul:not(.normal) li > span { padding: 0 2.5em 0 1.5em; display: block; margin: 8px 0; }
+ul:not(.normal) li > span, ul:not(.normal) li > a { padding: 0 2.5em 0 1.5em; display: block; margin: 8px 0; }
 
 #page { margin: 0 auto; width: 500px; }
 #new-list { padding-top: 1em; }
