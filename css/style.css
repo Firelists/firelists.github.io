@@ -17,7 +17,7 @@ ul:not(.normal) li > i { padding: 8px; }
 ul:not(.normal) li > div > i { padding: 7px 4px; }
 ul:not(.normal) li > div > i:first-child { padding-left: 8px; }
 ul:not(.normal) li > div > i:last-child { padding-right: 8px; }
-ul:not(.normal) li > span, ul:not(.normal) li > a { padding: 0 2.5em 0 1.5em; display: block; margin: 8px 0; }
+ul:not(.normal) li > span{ padding: 0 2.5em 0 1.5em; display: block; margin: 8px 0; }
 
 #page { margin: 0 auto; width: 500px; }
 #new-list { padding-top: 1em; }
@@ -33,7 +33,7 @@ ul:not(.normal) li > span, ul:not(.normal) li > a { padding: 0 2.5em 0 1.5em; di
 #list-items li.done i.fa-check { color: #363636; }
 /*#list-items li.editing { padding: 2px 8px; }*/
 #list-items li.editing > i { margin: 3px 0 2px 0; }
- #list-items li.editing > div > i { margin: 4px 0 2px 0; }
+#list-items li.editing > div > i { margin: 4px 0 2px 0; }
 #list-items li.editing [type="text"] { padding: 4px; font-size: 1em; width: 350px; margin: 4px 0 4px 10px; }
 #list-items i.fa-pencil, #list-items i.fa-times-circle { font-size: 1.1em; margin: 0 2px !important; }
 #list-stats { font-weight: bold; color: #919191; padding-top: 1em; }
@@ -42,6 +42,8 @@ ul:not(.normal) li > span, ul:not(.normal) li > a { padding: 0 2.5em 0 1.5em; di
 #list-actions a i { color: #919191; }
 #list-actions a i:hover { color: #F6522D; }
 #my-lists { padding-top: 1em; }
+#my-lists li { padding: 8px; }
+#my-lists li > i { padding: 0; }
 #comments { border-top: 2px solid #919191; padding: 1em; margin-top: 1em; }
 #auth-actions > a { margin: 0 0 0 0.4em; }
 #last-edited { color: #919191; font-size: 0.5em; font-weight: normal; display: inline-block; margin-top: 1em; float: right; }
